@@ -19,23 +19,32 @@ Common names for *static factory methods* used in Java SDK
 * *from*
 ```java
 Date d = [Date.from](https://docs.oracle.com/javase/9/docs/api/java/util/Date.html#from-java.time.Instant-)(instant);
+```
 * *of*
 ```java
 Set<Rank> faceCards = [EnumSet.of](https://docs.oracle.com/javase/9/docs/api/java/util/EnumSet.html#of-E-E-E-)(JAC, QUEEN, KING);
+```
 * *valueOf*
 ```java
 BigInteger prime = [BigInteger.valueOf](https://docs.oracle.com/javase/9/docs/api/java/math/BigInteger.html#valueOf-long-)(Integer.MAX_VALUE);
+```
 * *instance* or *getInstance*
 ```java
 StackWalker luke = [StackWalker.getInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/StackWalker.html#getInstance-java.lang.StackWalker.Option-)(options);
+```
 * *create* or *newInstance*
 ```java
 Object newArray = [Array.newInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/reflect/Array.html#newInstance-java.lang.Class-int-)(classObject, arrayLen);
+```
 * *getType*
 ```java
 FileStore fs = [Files.getFileStore](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#getFileStore-java.nio.file.Path-)(path);
+```
 * *newType*
 ```java
 BufferedReader br = [Files.newBufferedReader](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-)(path);
+```
 * *type*
+```java
 List<Complaint> litany = [Collections.list](https://docs.oracle.com/javase/9/docs/api/java/util/Collections.html#list-java.util.Enumeration-)(legacyLitany);
+```
