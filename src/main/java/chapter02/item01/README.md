@@ -16,35 +16,35 @@ But this approach has some limitation
 2. **Is hard for programmers to find** -  Sometimes the API documentation cannot be so clear about the methods that returns an instance. For that reason is a good approach uses some commons names;
 
 Common names for *static factory methods* used in Java SDK
-* *from*
+* *from* - [Date.from](https://docs.oracle.com/javase/9/docs/api/java/util/Date.html#from-java.time.Instant-)
 ```java
-Date d = [Date.from](https://docs.oracle.com/javase/9/docs/api/java/util/Date.html#from-java.time.Instant-)(instant);
+Date d = Date.from(instant);
 ```
-* *of*
+* *of* - [EnumSet.of](https://docs.oracle.com/javase/9/docs/api/java/util/EnumSet.html#of-E-E-E-)
 ```java
-Set<Rank> faceCards = [EnumSet.of](https://docs.oracle.com/javase/9/docs/api/java/util/EnumSet.html#of-E-E-E-)(JAC, QUEEN, KING);
+Set<Rank> faceCards = EnumSet.of(JAC, QUEEN, KING);
 ```
-* *valueOf*
+* *valueOf* - [BigInteger.valueOf](https://docs.oracle.com/javase/9/docs/api/java/math/BigInteger.html#valueOf-long-)
 ```java
-BigInteger prime = [BigInteger.valueOf](https://docs.oracle.com/javase/9/docs/api/java/math/BigInteger.html#valueOf-long-)(Integer.MAX_VALUE);
+BigInteger prime = BigInteger.valueOf(Integer.MAX_VALUE);
 ```
-* *instance* or *getInstance*
+* *instance* or *getInstance* - [StackWalker.getInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/StackWalker.html#getInstance-java.lang.StackWalker.Option-)
 ```java
-StackWalker luke = [StackWalker.getInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/StackWalker.html#getInstance-java.lang.StackWalker.Option-)(options);
+StackWalker luke = StackWalker.getInstance(options);
 ```
-* *create* or *newInstance*
+* *create* or *newInstance* - [Array.newInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/reflect/Array.html#newInstance-java.lang.Class-int-)
 ```java
-Object newArray = [Array.newInstance](https://docs.oracle.com/javase/9/docs/api/java/lang/reflect/Array.html#newInstance-java.lang.Class-int-)(classObject, arrayLen);
+Object newArray = Array.newInstance(classObject, arrayLen);
 ```
-* *getType*
+* *getType* - [Files.getFileStore](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#getFileStore-java.nio.file.Path-)
 ```java
-FileStore fs = [Files.getFileStore](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#getFileStore-java.nio.file.Path-)(path);
+FileStore fs = Files.getFileStore(path);
 ```
-* *newType*
+* *newType* - [Files.newBufferedReader](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-)
 ```java
-BufferedReader br = [Files.newBufferedReader](https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-)(path);
+BufferedReader br = Files.newBufferedReader(path);
 ```
-* *type*
+* *type* - [Collections.list](https://docs.oracle.com/javase/9/docs/api/java/util/Collections.html#list-java.util.Enumeration-)
 ```java
-List<Complaint> litany = [Collections.list](https://docs.oracle.com/javase/9/docs/api/java/util/Collections.html#list-java.util.Enumeration-)(legacyLitany);
+List<Complaint> litany = Collections.list(legacyLitany);
 ```
